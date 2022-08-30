@@ -1,0 +1,20 @@
+<html>
+    <body style="padding-top: 20px; font-family: Consolas;">
+        <div style='padding-left: 20px'>
+            {% if name %}
+                <h1 style='margin: 0; padding: 0; line-height: 100%;'>Hello {{ name }} !</h1>
+            {% else %}
+                <h1 style='margin: 0; padding: 0; line-height: 100%;'>Hello World !</h1>
+            {% endif %}
+        </div>
+        {% if arr %}
+        <div>
+            <ul style='padding-left: 20px, margin-left: 20px'>
+                {% for item in arr %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </body>
+</html>
